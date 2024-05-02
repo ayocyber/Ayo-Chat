@@ -9,7 +9,7 @@ export const ChatContext = React.createContext()
 export const ChatContextProvider =({children})=>{
     const {CurrentUser} = React.useContext(AuthContext)
     const INITIAL_STATE ={
-        chatID:"null",
+        chatID:"null"
         user: {}
     }
     const chatReducer = (state,action)=>{
